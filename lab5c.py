@@ -10,7 +10,7 @@ def add(number1, number2):
 
 def read_file(filename):
     try:
-        f = open('/home/mpopov/ops445/lab5/'+filename, 'r')
+        f = open(filename, 'r')
         return(f.readlines())
     except (FileNotFoundError):
         return("error: could not read file")
